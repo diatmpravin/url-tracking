@@ -1,0 +1,31 @@
+	<html>
+	<head>
+	<title>Event!!!</title>
+	<script type="text/javascript">
+		function getUrl() {
+  			var url = document.URL;
+  			document.getElementById("txtUrl").value = url;
+		}
+
+		window.addEventListener('load', getUrl);
+	</script>
+	<style>
+		p
+		{
+	    	font-size:50px;
+		    position: fixed;
+		    left: 550px;
+         	top: 300px;
+	    }
+	</style>
+
+	</head>
+		<form>
+  			<label for="fname">First name:</label><br>
+  			<input type="text" id="fname" value=""><br><br>
+  			<input type="text" id="txtUrl" name="txtUrl" value="" />
+  			<input type="submit" value="Submit">
+		</form>
+	</body>
+
+	</html>
